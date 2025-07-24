@@ -82,7 +82,7 @@ fig_map = go.Figure(data=go.Choropleth(
     locations=working_df['Abbreviation'],
     z=working_df['Income to Expenses Ratio'],
     locationmode='USA-states',
-    colorscale='Viridis',
+    colorscale='RdYlGn',
     zmin=1,
     zmax=5,
     colorbar_title='Income/Expenses',
