@@ -102,7 +102,7 @@ def build_bar_chart(df, title):
     return go.Figure(data=go.Bar(
         x=df['State'],
         y=df['Income to Expenses Ratio'],
-        marker=dict(color=df['Income to Expenses Ratio'], colorscale='Viridis'),
+        marker=dict(color=df['Income to Expenses Ratio'], colorscale='RdYlGn'),
         hovertemplate="%{x}: %{y:.2f}<extra></extra>"
     )).update_layout(title=title)
 
